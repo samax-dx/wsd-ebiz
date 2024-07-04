@@ -25,7 +25,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Table(indexes = {
+@Table(name = "purchase_wish", indexes = {
         @Index(columnList = "customerId,productId", unique = true)
 })
 public class PurchaseWish {

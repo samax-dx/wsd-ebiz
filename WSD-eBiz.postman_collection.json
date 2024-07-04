@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "1f2c060b-1fd9-41e7-a53a-f3b807e6ce21",
+		"name": "WSD-eBiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34581829"
+	},
+	"item": [
+		{
+			"name": "echo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/echo?msg=hello",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"echo"
+					],
+					"query": [
+						{
+							"key": "msg",
+							"value": "hello"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerWishList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/wishlist/getCustomerWishList?customerId=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"wishlist",
+						"getCustomerWishList"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}
