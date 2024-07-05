@@ -61,6 +61,34 @@
 				"url": "{{host}}/salesReport/getTotalSaleToday"
 			},
 			"response": []
+		},
+		{
+			"name": "maxSaleDayBetweenDates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/salesReport/getMaxSaleDayBetweenDates?startDate=2024-02-15&endDate=2024-07-05",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"salesReport",
+						"getMaxSaleDayBetweenDates"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-02-15"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-07-05"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
