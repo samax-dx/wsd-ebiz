@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SaleRepository extends JpaRepository<Sale, Long> {
 
-    @Query("select sum(s.amount) from Sale s where s.saleDate = CURRENT_DATE")
+    @Query("select COALESCE(sum(s.saleAmount), 0) from Sale s where s.saleDate = CURRENT_DATE")
     double getTotalSaleToday();
 
 }

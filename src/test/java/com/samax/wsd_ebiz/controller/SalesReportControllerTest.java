@@ -25,7 +25,7 @@ class SalesReportControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void shouldReturnWishListForCustomer1() throws Exception {
+    void shouldReturnTotalSaleForToday() throws Exception {
         when(saleRepository.getTotalSaleToday()).thenReturn(123.58);
 
         mockMvc.perform(MockMvcRequestBuilders

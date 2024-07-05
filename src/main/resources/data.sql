@@ -212,7 +212,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (34, 15
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (6, 143.33, '2024-04-25 20:23:47', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (17, 128.09, '2024-05-21 04:04:42', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (42, 109.6, '2024-05-24 23:02:58', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (50, 113.8, '2024-06-08 01:48:14', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (47, 113.8, '2024-06-08 01:48:14', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (28, 71.43, '2024-02-13 22:06:49', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (5, 172.58, '2024-02-13 16:05:30', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (35, 80.08, '2024-04-19 12:05:59', DATE(saleTimestamp));
@@ -246,7 +246,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 15
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (28, 70.07, '2024-01-15 06:32:19', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (10, 68.77, '2024-01-06 05:54:10', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (11, 44.84, '2024-06-01 05:41:05', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (50, 77.36, '2024-05-14 02:09:55', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (47, 77.36, '2024-05-14 02:09:55', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (25, 28.03, '2024-02-14 23:55:17', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (38, 85.56, '2024-03-27 20:13:37', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (2, 107.01, '2024-01-15 15:08:15', DATE(saleTimestamp));
@@ -267,7 +267,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (28, 16
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (11, 15.52, '2024-03-02 08:03:52', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (29, 104.34, '2024-04-19 13:56:38', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (42, 48.73, '2024-03-21 05:41:50', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (48, 106.57, '2024-03-30 07:23:00', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (46, 106.57, '2024-03-30 07:23:00', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (9, 112.11, '2024-04-08 01:02:56', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (46, 160.55, '2024-02-11 21:16:18', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (6, 67.5, '2024-05-08 20:27:19', DATE(saleTimestamp));
@@ -281,7 +281,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (43, 12
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (33, 41.77, '2024-05-19 09:10:28', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (39, 91.14, '2024-01-08 09:01:22', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (31, 149.17, '2024-01-27 23:25:54', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (49, 179.47, '2024-04-12 10:09:42', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (45, 179.47, '2024-04-12 10:09:42', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (27, 126.61, '2024-03-28 06:12:11', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (17, 62.21, '2024-04-27 10:36:01', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (4, 49.12, '2024-06-24 09:13:42', DATE(saleTimestamp));
@@ -312,7 +312,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (15, 12
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (8, 96.4, '2024-06-05 09:29:24', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (34, 164.22, '2024-01-27 18:28:01', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (33, 55.94, '2024-04-18 19:43:34', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (48, 124.02, '2024-06-07 14:34:11', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (46, 124.02, '2024-06-07 14:34:11', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (42, 40.94, '2024-03-05 10:30:27', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 59.53, '2024-01-04 13:36:16', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (44, 59.28, '2024-03-29 04:39:11', DATE(saleTimestamp));
@@ -333,7 +333,7 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (32, 17
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (7, 61.17, '2024-05-13 06:49:50', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (28, 157.43, '2024-05-03 01:03:19', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (15, 59.1, '2024-01-16 10:35:51', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (50, 98.15, '2024-02-12 04:19:21', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (47, 98.15, '2024-02-12 04:19:21', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (5, 115.16, '2024-06-19 02:20:20', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (41, 50.98, '2024-03-11 22:33:03', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (37, 124.9, '2024-03-16 16:30:03', DATE(saleTimestamp));
@@ -341,16 +341,16 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (6, 104
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (19, 173.94, '2024-01-19 00:30:39', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (29, 40.47, '2024-01-02 19:16:14', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (36, 95.43, '2024-03-23 23:33:14', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (48, 83.12, '2024-02-16 11:36:53', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (46, 83.12, '2024-02-16 11:36:53', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (17, 75.07, '2024-04-10 12:28:15', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (43, 86.5, '2024-05-28 07:35:55', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (9, 139.98, '2024-06-09 23:11:16', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (14, 177.32, '2024-06-25 19:03:25', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (27, 99.11, '2024-03-30 17:27:15', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (18, 142.62, '2024-02-07 22:20:45', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (39, 102.91, '2024-04-02 00:08:31', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (22, 136.94, '2024-05-24 06:57:42', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (3, 155.7, '2024-04-15 03:56:35', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 157.62, '2024-02-26 06:18:05', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (8, 186.65, '2024-04-14 09:57:51', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (43, 86.5, '2024-05-28 07:31:40', DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (39, 102.91, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (22, 136.94, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (3, 155.7, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 157.62, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (8, 186.65, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (43, 86.5, CURRENT_TIMESTAMP, DATE(saleTimestamp));
