@@ -348,9 +348,9 @@ INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (9, 139
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (14, 177.32, '2024-06-25 19:03:25', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (27, 99.11, '2024-03-30 17:27:15', DATE(saleTimestamp));
 INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (18, 142.62, '2024-02-07 22:20:45', DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (39, 102.91, CURRENT_TIMESTAMP, DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (22, 136.94, CURRENT_TIMESTAMP, DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (3, 155.7, CURRENT_TIMESTAMP, DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 157.62, CURRENT_TIMESTAMP, DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (8, 186.65, CURRENT_TIMESTAMP, DATE(saleTimestamp));
-INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (43, 86.5, CURRENT_TIMESTAMP, DATE(saleTimestamp));
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (39, 102.91, CURRENT_TIMESTAMP, CURRENT_DATE);
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (22, 136.94, CURRENT_TIMESTAMP, CURRENT_DATE);
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (3, 155.7, CURRENT_TIMESTAMP, CURRENT_DATE);
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (13, 157.62, CURRENT_TIMESTAMP, CURRENT_DATE);
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) VALUES (8, 186.65, CURRENT_TIMESTAMP, CURRENT_DATE);
+INSERT INTO sale (productId, saleAmount, saleTimestamp, saleDate) SELECT 43, (RAND() * 100), CURRENT_TIMESTAMP, CURRENT_DATE;
