@@ -9,3 +9,6 @@ WSD assignment e-commerce business software project
 
 ## API Collection
 * Postman: [WSD-eBiz.postman_collection.json](https://raw.githubusercontent.com/samax-dx/wsd-ebiz/main/WSD-eBiz.postman_collection.json)
+
+---------------------------------------
+#### Note: Some of the commit message for issue #3, #4, #5 has been referred as issue #2 by mistake
