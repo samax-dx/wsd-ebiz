@@ -89,6 +89,15 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "top5SellingItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{host}}/salesReport/getTop5SellingItems"
+			},
+			"response": []
 		}
 	],
 	"event": [

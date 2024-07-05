@@ -1,6 +1,12 @@
 package com.samax.wsd_ebiz.controller;
 
+import com.samax.wsd_ebiz.model.Product;
+import com.samax.wsd_ebiz.model.ProductSale;
 import com.samax.wsd_ebiz.repository.SaleRepository;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +18,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.Mockito.when;
@@ -46,6 +54,33 @@ class SalesReportControllerTest {
                         .get("/salesReport/getMaxSaleDayBetweenDates?startDate=2024-02-15&endDate=2024-07-05"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$", not(empty())));
+    }
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    private static class ProductSaleDto implements ProductSale {
+
+        private Long productId;
+        private String name;
+        private double totalSale;
+
+    }
+
+    @Test
+    void shouldReturn5TopSellingItemOfAllTime() throws Exception {
+        List<ProductSale> productSales = new ArrayList<>();
+        productSales.add(new ProductSaleDto(1L, "Product 1", 90D));
+        productSales.add(new ProductSaleDto(2L, "Product 2", 80D));
+        productSales.add(new ProductSaleDto(3L, "Product 3", 70D));
+        productSales.add(new ProductSaleDto(4L, "Product 4", 60D));
+        productSales.add(new ProductSaleDto(5L, "Product 5", 50D));
+        when(saleRepository.getTop5SellingItems()).thenReturn(productSales);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/salesReport/getTop5SellingItems"))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$", hasSize(5)));
     }
 
 }
