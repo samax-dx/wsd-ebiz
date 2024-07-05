@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1f2c060b-1fd9-41e7-a53a-f3b807e6ce21",
+		"_postman_id": "fe4b6799-52fc-485c-9786-e671129d24c0",
 		"name": "WSD-eBiz",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "34581829"
@@ -50,6 +50,15 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "totalSaleToday",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{host}}/salesReport/getTotalSaleToday"
 			},
 			"response": []
 		}
