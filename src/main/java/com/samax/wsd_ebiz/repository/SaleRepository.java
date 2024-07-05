@@ -1,5 +1,6 @@
 package com.samax.wsd_ebiz.repository;
 
+import com.samax.wsd_ebiz.model.ProductQtySale;
 import com.samax.wsd_ebiz.model.ProductSale;
 import com.samax.wsd_ebiz.model.Sale;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -30,5 +31,13 @@ public interface SaleRepository extends JpaRepository<Sale, Long> {
                     GROUP BY s.productId ORDER BY totalSale desc limit 5
         """, nativeQuery = true)
     List<ProductSale> getTop5SellingItems();
+
+    @Query(value = """
+            SELECT s.productId, p.name, SUM(s.saleQty) as saleQuantity FROM Sale s
+                    join product p on p.productId = s.productId
+                    where saleDate < DATE_FORMAT(NOW(), '%Y-%m-01')
+                    GROUP BY s.productId ORDER BY saleQuantity desc limit 5
+        """, nativeQuery = true)
+    List<ProductQtySale> getLastMonthScb5TopSellingItems();
 
 }

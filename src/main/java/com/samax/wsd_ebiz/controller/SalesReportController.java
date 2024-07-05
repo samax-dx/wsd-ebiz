@@ -1,6 +1,7 @@
 package com.samax.wsd_ebiz.controller;
 
 import com.samax.wsd_ebiz.model.Product;
+import com.samax.wsd_ebiz.model.ProductQtySale;
 import com.samax.wsd_ebiz.model.ProductSale;
 import com.samax.wsd_ebiz.repository.SaleRepository;
 import lombok.RequiredArgsConstructor;
@@ -33,6 +34,11 @@ public class SalesReportController {
     @GetMapping("/getTop5SellingItems")
     public List<ProductSale> getTop5SellingItems() {
         return saleRepository.getTop5SellingItems();
+    }
+
+    @GetMapping("/getLastMonthScb5TopSellingItems")
+    public List<ProductQtySale> getLastMonthScb5TopSellingItems() {
+        return saleRepository.getLastMonthScb5TopSellingItems();
     }
 
 }

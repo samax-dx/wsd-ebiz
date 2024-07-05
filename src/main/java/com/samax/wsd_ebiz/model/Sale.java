@@ -41,6 +41,8 @@ public class Sale {
     @JsonIgnore
     private Product product;
 
+    private double saleQty;
+
     @Transient
     private String productName;
 

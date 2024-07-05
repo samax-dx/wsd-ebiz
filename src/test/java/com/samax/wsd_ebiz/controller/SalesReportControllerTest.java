@@ -1,6 +1,6 @@
 package com.samax.wsd_ebiz.controller;
 
-import com.samax.wsd_ebiz.model.Product;
+import com.samax.wsd_ebiz.model.ProductQtySale;
 import com.samax.wsd_ebiz.model.ProductSale;
 import com.samax.wsd_ebiz.repository.SaleRepository;
 import lombok.AllArgsConstructor;
@@ -79,6 +79,34 @@ class SalesReportControllerTest {
         when(saleRepository.getTop5SellingItems()).thenReturn(productSales);
 
         mockMvc.perform(MockMvcRequestBuilders.get("/salesReport/getTop5SellingItems"))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$", hasSize(5)));
+    }
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    private static class ProductQtySaleDto implements ProductQtySale {
+
+        private Long productId;
+        private String name;
+        private double saleQuantity;
+
+    }
+
+    @Test
+    void shouldReturn5ScbTopSellingItemOfLastMonth() throws Exception {
+        List<ProductQtySale> productSales = new ArrayList<>();
+        productSales.add(new ProductQtySaleDto(1L, "Product 1", 20D));
+        productSales.add(new ProductQtySaleDto(2L, "Product 2", 18D));
+        productSales.add(new ProductQtySaleDto(3L, "Product 3", 16D));
+        productSales.add(new ProductQtySaleDto(4L, "Product 4", 14D));
+        productSales.add(new ProductQtySaleDto(5L, "Product 5", 10D));
+        when(saleRepository.getLastMonthScb5TopSellingItems()).thenReturn(productSales);
+
+        mockMvc.perform(MockMvcRequestBuilders
+                        .get("/salesReport/getLastMonthScb5TopSellingItems"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$", hasSize(5)));
     }
