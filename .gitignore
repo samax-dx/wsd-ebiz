@@ -32,4 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 
-.ebiz-logfile.log
+ebiz-logfile.log
